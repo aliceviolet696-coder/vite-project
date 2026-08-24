@@ -3,9 +3,9 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import './App.css';
 import data from './data/empleados';
 import Empleados from './pages/Empleados.jsx';
-import FormularioEmpleado from './pages/FormularioEmpleado.jsx';
+import FormularioEmpleado from './components/FormularioEmpleado.jsx';
 import Navbar from './components/Navbar.jsx';
-import Noencontrada from './pages/Noencontrada.jsx';
+import PaginaNoEncontrada from './components/PaginaNoEncontrada.jsx';
 
 function App() {
   const [empleados, setEmpleados] = useState(data);
@@ -61,7 +61,7 @@ function App() {
             />
           }
         />
-        <Route path="*" element={<Noencontrada />} />
+        <Route path="*" element={<PaginaNoEncontrada />} />
       </Routes>
     </BrowserRouter>
   );
