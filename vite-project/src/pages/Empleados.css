@@ -87,6 +87,206 @@
 
 
 /* =========================
+   CONTENEDOR Y HEADER
+========================= */
+
+.empleados-container {
+    padding: 32px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.empleados-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+    flex-wrap: wrap;
+    margin-bottom: 24px;
+}
+
+.empleados-header h1 {
+    margin: 0 0 4px;
+    font-size: 32px;
+}
+
+.empleados-header p {
+    color: #64748b;
+}
+
+
+/* =========================
+   TABLA
+========================= */
+
+.tabla-container {
+    background: white;
+    border-radius: 12px;
+    border: 1px solid #e2e8f0;
+    box-shadow: 0 5px 15px rgba(15, 23, 42, 0.06);
+    overflow-x: auto;
+}
+
+.tabla-empleados {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 14px;
+}
+
+.tabla-empleados th {
+    text-align: left;
+    padding: 14px 16px;
+    background: #f8fafc;
+    color: #334155;
+    text-transform: uppercase;
+    font-size: 11px;
+    letter-spacing: 1px;
+    border-bottom: 1px solid #e2e8f0;
+    white-space: nowrap;
+}
+
+.tabla-empleados td {
+    padding: 14px 16px;
+    border-bottom: 1px solid #f1f5f9;
+    white-space: nowrap;
+}
+
+.tabla-empleados tbody tr:hover {
+    background: #f8fafc;
+}
+
+
+/* =========================
+   BOTONES
+========================= */
+
+.btn-nuevo {
+    background: #4f46e5;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 8px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.btn-nuevo:hover {
+    background: #4338ca;
+}
+
+.btn-editar {
+    background: #e0e7ff;
+    color: #4338ca;
+    border: none;
+    padding: 8px 14px;
+    border-radius: 6px;
+    font-weight: 600;
+    cursor: pointer;
+    margin-right: 8px;
+}
+
+.btn-editar:hover {
+    background: #c7d2fe;
+}
+
+.btn-eliminar {
+    background: #fee2e2;
+    color: #b91c1c;
+    border: none;
+    padding: 8px 14px;
+    border-radius: 6px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.btn-eliminar:hover {
+    background: #fecaca;
+}
+
+
+/* =========================
+   FORMULARIO
+========================= */
+
+.formulario-empleado {
+    max-width: 480px;
+    margin: 0 auto;
+    padding: 32px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    text-align: left;
+}
+
+.formulario-empleado h1 {
+    font-size: 28px;
+    margin: 0 0 8px;
+}
+
+.campo {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.campo label,
+.formulario-empleado > label {
+    font-weight: 600;
+    color: #334155;
+}
+
+.campo input,
+.campo select {
+    padding: 10px 12px;
+    border: 1px solid #cbd5e1;
+    border-radius: 8px;
+    font-size: 15px;
+}
+
+.campo input:focus,
+.campo select:focus {
+    outline: 2px solid #4f46e5;
+    outline-offset: 0;
+    border-color: #4f46e5;
+}
+
+.botones {
+    display: flex;
+    gap: 12px;
+    margin-top: 8px;
+}
+
+.btn-guardar {
+    background: #059669;
+    color: white;
+    border: none;
+    padding: 12px 22px;
+    border-radius: 8px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.btn-guardar:hover {
+    background: #047857;
+}
+
+.btn-cancelar {
+    background: #f1f5f9;
+    color: #334155;
+    border: 1px solid #cbd5e1;
+    padding: 12px 22px;
+    border-radius: 8px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.btn-cancelar:hover {
+    background: #e2e8f0;
+}
+
+
+/* =========================
    HEADER RESPONSIVE
 ========================= */
 

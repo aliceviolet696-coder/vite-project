@@ -1,11 +1,7 @@
 import { useNavigate } from 'react-router-dom';
-import './empleados.css';
+import './Empleados.css';
 
-function Empleados({ empleados, onEliminar, onEditar }) {
-    
-    
-    
-    
+function Empleados({ empleados, onEliminar }) {
     const navigate = useNavigate();
 
 
@@ -29,6 +25,13 @@ function Empleados({ empleados, onEliminar, onEditar }) {
                     <span>Total</span>
                     <strong>{empleados.length}</strong>
                 </div>
+
+                <button
+                    className="btn-nuevo"
+                    onClick={() => navigate('/nuevo')}
+                >
+                    + Nuevo Empleado
+                </button>
             </div>
 
             <div className="tabla-container">
@@ -105,7 +108,7 @@ function Empleados({ empleados, onEliminar, onEditar }) {
 
                                     <button
                                         className="btn-editar"
-                                        onClick={() => onEditar(empleado)}
+                                        onClick={() => manejarEditar(empleado)}
                                     >
                                         Editar
                                     </button>
