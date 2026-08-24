@@ -6,6 +6,7 @@ import Empleados from './pages/Empleados.jsx';
 import FormularioEmpleado from './components/FormularioEmpleado.jsx';
 import Navbar from './components/Navbar.jsx';
 import PaginaNoEncontrada from './components/PaginaNoEncontrada.jsx';
+import EmpleadosPage from './pages/EmpleadosPage.jsx';
 
 function App() {
   const [empleados, setEmpleados] = useState(data);
@@ -61,6 +62,7 @@ function App() {
             />
           }
         />
+        <Route path="/basicos/:id?" element={<EmpleadosPage />} />
         <Route path="*" element={<PaginaNoEncontrada />} />
       </Routes>
     </BrowserRouter>
